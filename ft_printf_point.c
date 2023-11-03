@@ -6,7 +6,7 @@
 /*   By: faveline <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 12:04:18 by faveline          #+#    #+#             */
-/*   Updated: 2023/11/03 09:54:54 by faveline         ###   ########.fr       */
+/*   Updated: 2023/11/03 10:39:51 by faveline         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,8 @@ int	ft_printf_point(va_list to_write)
 	ptr = va_arg(to_write, void *);
 	if (ptr == 0)
 	{
-		write(1, "0x", 2);
-		return (2);
+		write(1, "0x0", 3);
+		return (3);
 	}
 	conv = (long unsigned int) ptr;
 	i = ft_size_conv(conv, 0);
